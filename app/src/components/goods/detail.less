@@ -1,0 +1,165 @@
+#detail{
+    // 头部切换样式
+    .kzDetailHead{
+        height: 47px; box-sizing: border-box;
+        display: flex;
+        .head-icon{
+            flex: 0 0 47px;
+            width: 47px;
+        }
+        .head-tab{ padding: 0 15px; flex: 1; }
+        .icon-fanhui{font-size: 20px;}
+        // 重写tab样式
+        .vux-tab{ height: 46px; border: 0;}
+        .vux-tab .vux-tab-item{ background: #fff;}
+    }
+    //切换内容框
+    .detailItem{ width: 100%;position: absolute;top:47px;bottom: 50px;overflow-y: scroll;}
+    //切换的图片
+    .kz-detail-banner{
+        .img-position{
+            position: absolute;right: 10px;bottom: 10px;background:rgba(0,0,0,0.4);color: #fff;
+            z-index: 9;width:42px;height: 42px;border-radius: 50%; line-height: 42px;
+        }
+        .pswp__bg{ background: #fff!important;}
+    }
+
+    .configPrice{
+        .weui-cells{ margin-top: 5px; font-size: 14px; line-height: 2;}
+        .weui-cell{ display: flex;align-items: center;
+            padding: 0 15px; height: 45px;
+            &>div{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+            .vux-number-selector-plus{ margin-right: 0;}
+            .vux-number-input{ font-size: 14px;}
+            .vux-number-selector svg{fill: #333;}
+            .weui-cell__ft{ margin-left: 4px;}
+        }
+
+        // 配件样式
+        span.config{ border: 1px solid #ededed; padding: 0px 10px; height: 30px; line-height: 30px; display: inline-block; font-size: 12px; margin-right: 5px;}
+        .configActive{ color: #8fc31f; border:1px solid #8fc31f!important;}
+
+
+    }
+    // 商品数量选择
+    .goodsNumSelect{
+      padding: 0; margin: 0; vertical-align: middle;
+      display: inline-block;height: 30px;
+      .numBtn{ width: 30px; height: 30px; background-color: #fff; border: 1px solid #ededeb; font-size: 16px; float: left;}
+      .numInput{  height: 30px; text-align:center; width: 42px; border-bottom: 1px solid #ededeb; border-top: 1px solid #ededeb;float: left;}
+    }
+    // 页面底部
+    .detailFoot{
+        position: fixed;bottom: 0;left: 0;height: 50px;width: 100%; z-index: 502;
+        display: flex;
+        .cart{
+            width: 50px; height: 50px;position: relative;
+            .cart-num{
+                position: absolute;width: 14px;height: 14px;border-radius: 50%;background: #b4282d; font-size: 12px;
+                color: #fff;right: 6px;top: 6px;
+            }
+        }
+        .foot-left{
+            flex: 2;position: relative; line-height: 50px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis; padding-left: 10px;
+            box-sizing: border-box;
+            .total-ico{
+                position: absolute;right: 5px;top: 0px;
+            }
+            .total-discrible{
+                width: 85%;display: inline-block;overflow: hidden;
+            }
+        }
+        .foot-right{
+            flex: 1; width: 100px;background: #8fc31f;color: #fff;
+        }
+
+    }
+
+    .vux-popup-dialog{ overflow: visible; box-sizing: border-box;}
+    // 弹出详情展示图片部分
+    .detail_pop{ z-index: 999;}
+    .configurationTitle{
+        position: relative; background-color: #fff;
+        height: 78px;
+        .img{ width: 84px; height: 84px; position: absolute; background-color: #fff;
+            top:-20px; left: 10px; border: 1px solid #ededed; border-radius:7px;
+            img{ width: 100%;border-radius: 5px;}
+        }
+        .text{ padding: 20px 0 0 115px;}
+        .close{ position: absolute; right: 10px;
+            top:10px;}
+    }
+    .configuration{
+        overflow-y: scroll;
+        box-sizing: border-box;  max-height:400px;
+        background: #fff;
+        &::-webkit-scrollbar{width: 1px;}
+
+        // 配件和数量样式
+        .weui-cells{ margin-top: 0;}
+        .weui-cell{ padding: 5px 0; font-size: 14px;}
+        .weui-cells:before{ border: 0;}
+        .vux-cell-box:before{ border: 0;}
+        .weui-cells:after { border: 0;}
+    }
+    .discrible{
+        border: 1px solid #ededeb;
+        display: inline-block; font-size: 12px; margin: 5px 0 0; padding: 4px 8px; border-radius: 2px; text-align: center;
+        &.liActive{ border-color: #8fc31f; color: #8fc31f;}
+    }
+    
+    .rent-quesition{
+      display: inline-block;
+      width: 14px;height: 14px;background: #dbdbdb;border-radius: 50%;
+        color: #fff; text-align: center; line-height: 14px;
+    }
+    //弹框中的两个按钮
+    .detail_btn{
+        .weui-btn{ border-radius: 0;}
+        .weui-btn:after{border-radius: 0;}
+      .detail-cart{
+        width: 42px; height: 42px; position: relative;
+        .cart-num{
+          position: absolute;width: 14px;height: 14px;border-radius: 50%;background: #b4282d;
+          color: #fff;right: 4px;top: 4px; font-size: 12px;
+        }
+      }
+
+    }
+
+
+    .total-detail{
+        background-color: #fff; width: 100%; box-sizing: border-box; overflow: hidden;
+        position: fixed;bottom: 50px;padding:10px;
+        .popupline{
+            padding: 5px 0;
+        }
+    }
+    // 商品详情
+    .goods_detail{
+        width: 100%;
+        img{
+            max-width: 100%;
+        }
+    }
+    //商品咨询
+    .goods-zixu{
+        p{ color: #7d7b81; font-size: 12px; line-height: 18px;}
+      .weui-cell:before{ border: 0; }
+      .weui-cell{ border: 1px solid #ededeb;margin-top: 10px; padding: 10px; font-size: 14px; height: 100px;}
+      .public-consulting{ width: 100px; float: right;
+        button{ border: 1px solid #ededeb; font-size: 16px;}
+      }
+    }
+
+    // 租赁弹窗
+    .zulipopup{
+        height: 100%;background: rgba(0,0,0,0.5);
+    }
+    .wuhuo{
+        color: #fff;background: #d7d7d7;border: none;font-size: 18px;
+    }
+    .vux-number-selector,.vux-number-input{
+        height: 28px!important;
+    }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>kuaizu</title>
+</head>
+<script>
+    var ROOT = 'http://zl.my/';
+    var ROOT_PATH = 'http://zl.my/app/api/';
+    // var ROOT = 'http://pay.kuaizu365.cn/';
+    // var ROOT_PATH = 'http://pay.kuaizu365.cn/app/api/';
+    var pictureSource;
+    var destinationType;
+    document.addEventListener('deviceready',function(){
+        // 相机与获取相册使用
+        pictureSource=navigator.camera.PictureSourceType;
+        destinationType=navigator.camera.DestinationType;
+        
+    },false);
+</script>
+<body>
+<div id="app-box"></div>
+<script>
+    
+</script>
+</body>
+</html>

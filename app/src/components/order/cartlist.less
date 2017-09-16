@@ -1,0 +1,126 @@
+#cart{
+    //底部固定去結算部分
+    .foot-top{
+        background: #fff;
+        display: flex;
+        z-index: 2;
+        position: fixed; bottom: 50px;left: 0;height: 50px;width: 100%;align-items: center;border-top:1px solid #ededed;
+        .checkAll{
+            -webkit-appearance: none; border: 1px solid #9e9ea0; width: 20px; height: 20px; vertical-align: middle; border-radius: 50%; color: #fff;
+            &:checked{
+                background-color: #8fc31f; border-color:#8fc31f ;
+                &:after{ content: '\e73b'}
+            }
+        }
+        .font-top-cont {
+            height: 100%;
+            line-height: 50px;
+            flex: 1;
+            .kz-select{font-size: 12px;color: #333333}
+            .kz-total{color: #333333;padding-left: 14px;font-size: 16px}
+        }
+        .foot-top-btn{
+            flex: 0 0 100px;
+            width: 100px;background: #8fc31f;height: 100%;
+            color: #fff;
+            font-size: 16px;
+        }
+    }
+    // 划出来的按钮颜色
+    .vux-swipeout-button{
+        background: #b4282d;
+    }
+    .main-cont{
+        width: 100%;
+        position: absolute;
+        top:56px;
+        bottom: 105px;overflow-y: scroll;
+        &::-webkit-scrollbar{
+            width: 1px;
+        }
+    }
+    .kz-standard{color: #333333;}
+    .cart-item{
+        width: 100%;
+        .item-content{
+            display: -webkit-box;
+        }
+        // 左侧图片部分
+        .li-top{
+            display: flex; width: 100px;
+            .check-box{
+                flex: 0 0 30px;width: 30px;
+            }
+            .img-box{
+                flex: 0 0 70px;width: 70px;
+                img{ width: 70px; }
+                p{ text-align:center;}
+            }
+        }
+        .li-bottom{
+            -webkit-box-flex:1; line-height: 1.5;
+            position: relative;
+            .huise{
+                margin-top: 2px;
+                color: #a0a0a0;
+                font-size: 12px;
+            }
+        }
+
+        .listFooter{
+            .kz-text-success{padding:6px 0 0 6px; }
+            .kz-pull{margin-top: 4px}
+            .li-bottom-right{
+                width: 86px;
+                input{float: left;
+                    display: block;
+                    width: 34px;background: #999;
+                    height:26px;
+                    border: 1px solid #ebebed;
+                    border-left: none;
+                    border-right: none;
+                    text-align: center;
+                    line-height: 24px;
+                    background: #fff; font-size: 12px
+                }
+                button{ float: left;
+                    width:26px;
+                    line-height: 26px;
+                    color: #393939;
+                    height:26px;
+                    text-align: center;
+                    background: #fff;
+                    border: 1px solid #ebebed;
+                    font-size: 20px;
+                }
+                .btn1{
+                    border-top-left-radius: 4px;
+                    border-bottom-left-radius: 4px;
+                }
+                .btn2{
+                    border-top-right-radius: 4px;
+                    border-bottom-right-radius: 4px;
+                }
+                .act{
+                    color: #cfcfcf;
+                }
+
+            }
+
+        }
+    }
+
+    // 复选框组件选中与未选中的样式
+    .check-item {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #999;
+        border-radius: 50%;
+    }
+    // 复选框组件选中与未选中的样式
+    .check-item-selected {
+        border-color: #8fc31f;
+        background-color: #8fc31f; color: #fff; text-align: center; line-height: 20px;
+        &:after{ content: '\e73b'}
+    }
+}

@@ -1,0 +1,183 @@
+#search {
+  width: 100%;
+  height: 100%;
+  .vux-drawer > .drawer-right{ width: 86%;}
+  .kzTextSuccess {
+    color: #8fc31f !important;
+  }
+
+  // 头部筛选和搜索框
+  .kz-goods-top{
+    // 投搜索框样式修改
+    .weui-search-bar{ background-color: #fff;
+      .weui-search-bar__form{ background-color: #fff;}
+      .weui-search-bar__form:after{ border-radius: 40px; background-color: #eff0f4;}
+    }
+
+
+  }
+
+  //筛选的分类列表
+  .toggle-show {
+    // 按钮的重置样式
+    .weui-btn{
+      font-size: 16px;
+      border-radius: 0;
+      &::after{ border-radius: 0;}
+    }
+    position: relative;top: 0px;left: 0;
+    background: #fff; z-index: 99;
+
+    .filterListWarp{display: flex; flex-direction: row; flex-wrap: wrap; max-height: 132px; overflow-y: scroll;}
+
+    .span-list {
+      width: 50%;
+      line-height: 32px;
+      text-align: center; font-size: 14px;
+      .filterItem {
+        display: inline-block;
+        width: 80%; padding: 0 10px; box-sizing: border-box;
+        text-align: left;
+        border-bottom:1px solid #fff ;
+        &.dark {
+          border-bottom: 1px solid #8fc31f; color: #8fc31f;
+        }
+      }
+    }
+  }
+  // 主内容
+  .goodslist {
+    &::-webkit-scrollbar { width: 1px;}
+    width: 100%;background: #fff;
+    position: absolute; top: 123px; bottom: 50px; overflow-y: auto;
+    .goodlist-box {
+      li {
+        overflow: hidden;
+        height: 95px;
+        display:-webkit-box;
+
+        .img-box {
+          width: 100px;
+          img { width: 94%;}
+        }
+        .goods-describe {
+          padding: 10px 5px;
+          -webkit-box-flex:1;
+          position: relative;
+          box-sizing: border-box;
+          p {
+            width: 100%; height: 38px; line-height: 19px;
+            display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;
+            overflow: hidden;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .goodslistActive{
+    z-index: 1;
+    animation: good 0.2s forwards;
+  };
+  @keyframes good {
+    from{top:127px;}
+    to{top:40px;}
+  }
+  @-webkit-keyframes good{
+    from{top:127px;}
+    to{top:40px;}
+  }
+  .ulActive{
+    position: fixed;left: 0;z-index:9999;background: #fff;width: 100%;
+    animation: uls 0.2s forwards;
+  }
+  @keyframes uls {
+    from{top:85px;}
+    to{top:0px;}
+  }
+  @-webkit-keyframes uls{
+    from{top:85px;}
+    to{top:0px;}
+  }
+  .toggleShowActive{
+    top:-45px;
+  }
+  .marginTop {
+    margin-top: 44px;
+  }
+  //排序部分
+  .kz-goods-sort {
+    display: flex;
+    border-bottom: 1px solid #ededed;
+    li {
+      flex: 1;
+      height: 40px;
+      font-size: 14px;
+      .price-select {
+         font-size:12px;-webkit-transform : scale(0.80,0.80) ;
+        display: flex;
+        line-height: 7px;
+        flex-direction: column;
+      }
+      span {
+        color: #999;
+      }
+    }
+    .kzTextSuccess{
+      span{color: #8fc31f; }
+    }
+    span.priceLight{ color: #8fc31f;}
+  }
+  //租赁方式选择
+  .kz-goods-methods {
+    display: flex;
+    border-bottom: 1px solid #ededed;
+    li {flex: 1; font-size: 12px; justify-content:center;display:flex; margin-bottom: -1px; padding: 7px 0;
+      .filter_item { width: 84%; padding: 3px 0; line-height: 14px;
+        background: #eff0f4; border: 1px solid #eff0f4;
+        text-align: center;
+        border-radius: 2px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      // 某个筛选选中时
+      &.active {
+        .filter_item{color: #8fc31f; border: 1px solid #8fc31f; background-color: #fff;}
+      }
+      // 筛选展开时
+      &.filterActive{ padding-bottom: 0;
+        .filter_item{
+          border: 1px solid #ebebed; color: #333;
+          border-bottom: 1px solid #fff; background-color: #fff;
+        }
+      }
+    }
+  }
+  // 侧边栏
+  .drawer {
+    height: 100%; width: 100%; font-size: 14px; overflow-y: scroll;
+    .weui-btn:after{ border-radius: 0;}
+    .weui-btn{ border-radius: 0;}
+    &::-webkit-scrollbar {
+      width: 1px;
+    }
+    h6{ font-size: 14px; line-height: 30px; padding-top: 5px;}
+    .filter-fixed-bar{ position: absolute; bottom: 0; left: 0;}
+    .drawer-padding {
+      padding: 10px;
+      .interval {
+        display: flex;
+        flex-flow: row wrap;
+        li { border: 1px solid #eff0f4;
+          width: 31%;background: #eff0f4; font-size: 12px; padding: 4px 0; box-sizing: border-box; border-radius: 3px; overflow: hidden; margin-right: 3%; margin-top: 10px; white-space: nowrap;
+          &.activeSpan {
+            background: #fff; border: 1px solid #8fc31f; color: #8fc31f;
+            .iconfont{ font-size: 12px!important;}
+          }
+          &:nth-child(3n){margin-right: 0;}
+        }
+      }
+    }
+  }
+}

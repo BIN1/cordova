@@ -1,0 +1,39 @@
+#accountindex{
+    .head{
+        padding: 0 15px;box-sizing: border-box; width: 100%;height: 120px; color:#fff;
+        background: url('../../../static/img/account/account_index_top.jpg') no-repeat;
+        .head-title{ font-size: 20px; text-align: center;
+        }
+        .head-bottom{
+            text-align: right;
+        }
+        i{
+            display: inline-block;width: 20px;height: 20px;vertical-align: top;
+        }
+        .starDark{ color: #c8c8c8;
+            &:after{ content:"\e609";}
+        }
+        .starLight{ color: #f4ea2a;
+            &:after{ content:"\e609";}
+        }
+        .starHalf{
+            background:url("../../../static/img/account/half_star.png")  4px 1px no-repeat;
+            background-size: 90% 90%;
+        }
+    }
+    .accountindex-nav {
+        display: -webkit-box;
+        padding: 10px 0;
+        background: #fff;
+        .accountindex-nav-block {
+            -webkit-box-flex: 1;
+            text-align: center;
+            border-right: 1px solid #ededed;
+            &:last-child {
+                border-right: none;
+            }
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

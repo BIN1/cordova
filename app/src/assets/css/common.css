@@ -1,0 +1,137 @@
+html,body{ height: 100%; margin:0 auto; overflow: hidden;}
+#app{ height: 100%;}
+*{ box-sizing: border-box;}
+*::-webkit-scrollbar{
+    width: 1px;
+}
+h1,h2,h3,h3,h4,h5,h6{ font-weight: normal;}
+ul li{ list-style: none;}
+.page-container{ height: 100% !important; overflow-y: auto;font:normal 14px/1.3 Microsoft Yahei;}
+.test{ border: 1px solid #f00; }
+.page-container::-webkit-scrollbar{width: 1px;}
+input,button{outline: none;border:none;font-family: Microsoft Yahei;}
+.kz-vertica-horizontal-center{display: flex;justify-content: center;align-items: center;}
+.kz-hide{display: none;}
+.kz-width-whole{ width: 100%;}
+.kz-fixed-bottom{position: fixed;bottom: 0; left: 0;} /*固定在底部*/
+.main-content{ position: absolute;top:47px;bottom:50px;overflow-y:auto;width: 100%;}
+.main-content::-webkit-scrollbar{width: 1px;}
+/*共用样式*/
+.kz-background-white{ background-color: #fff;}
+.kz-background-gray{ background-color: #eff0f4;}
+.kz-text-center{ text-align: center;}
+.kz-text-black{ color: #000;}
+.kz-text-dark{ color: #333;}
+.kz-text-default{ color: #666;}
+.kz-text-light{ color: #999;}
+.kz-text-success{ color: #8fc31f;}
+.kz-text-danger{ color: #b4282d;}
+.kz-font-xs{ font-size: 12px;}
+.kz-font-sm{ font-size: 14px;}
+.kz-font{ font-size: 16px;}
+.kz-font-lg{ font-size: 18px;}
+/*浮动*/
+.pull-left{ float: left;}
+.pull-right{ float: right;}
+.clearfix {zoom: 1;}
+.clearfix:after {content: " "; display: block; clear: both; height: 0;}
+/*边框*/
+.kz-border{ border: 1px solid #ebebed;}
+.kz-border-0{ border: 0;}
+.kz-border-top{ border-top: 1px solid #ebebed;}
+.kz-border-bottom{ border-bottom: 1px solid #ebebed;}
+.kz-border-right{ border-right: 1px solid #ebebed;}
+.kz-border-left{ border-left: 1px solid #ebebed;}
+.kz-border-horizontal{ border-right: 1px solid #ebebed;border-left: 1px solid #ebebed;border-top:0;border-bottom:0;}
+.kz-border-vertical{ border-right: 0;border-left: 0;border-top:1px solid #ebebed;border-bottom:1px solid #ebebed;}
+/*border-radius*/
+.kz-radius-0{ border-radius: 0px!important;}
+.kz-radius-xs{ border-radius: 1px;}
+.kz-radius-sm{ border-radius: 2px;}
+.kz-radius{ border-radius: 4px;}
+/* Margin helpers */
+.kz-margin { margin: 16px;}
+.kz-margin-0 { margin: 0!important;}
+.kz-margin-xs { margin: 5px;}
+.kz-margin-sm { margin: 10px;}
+.kz-margin-lg { margin: 24px;}
+.kz-margin-xl { margin: 32px;}
+.kz-margin-horizontal { margin-left: 16px; margin-right: 16px;}
+.kz-margin-horizontal-0 { margin-left: 0!important; margin-right: 0!important;}
+.kz-margin-horizontal-xs { margin-left: 5px; margin-right: 5px;}
+.kz-margin-horizontal-sm { margin-left: 10px; margin-right: 10px;}
+.kz-margin-horizontal-lg { margin-left: 24px; margin-right: 24px;}
+.kz-margin-horizontal-xl { margin-left: 32px; margin-right: 32px;}
+.kz-margin-vertical { margin-top: 16px; margin-bottom: 16px;}
+.kz-margin-vertical-0 { margin-top: 0!important; margin-bottom: 0!important;}
+.kz-margin-vertical-xs { margin-top: 5px; margin-bottom: 5px;}
+.kz-margin-vertical-sm { margin-top: 10px; margin-bottom: 10px;}
+.kz-margin-vertical-lg { margin-top: 24px; margin-bottom: 24px;}
+.kz-margin-vertical-xl { margin-top: 32px; margin-bottom: 32px;}
+.kz-margin-top { margin-top: 16px;}
+.kz-margin-top-0 { margin-top: 0!important;}
+.kz-margin-top-xs { margin-top: 5px;}
+.kz-margin-top-sm { margin-top: 10px;}
+.kz-margin-top-lg { margin-top: 24px;}
+.kz-margin-top-xl { margin-top: 32px;}
+.kz-margin-bottom { margin-bottom: 16px;}
+.kz-margin-bottom-0 { margin-bottom: 0!important;}
+.kz-margin-bottom-xs { margin-bottom: 5px;}
+.kz-margin-bottom-sm {  margin-bottom: 10px;}
+.kz-margin-bottom-lg { margin-bottom: 24px;}
+.kz-margin-bottom-xl { margin-bottom: 32px;}
+.kz-margin-left { margin-left: 16px;}
+.kz-margin-left-0 { margin-left: 0!important;}
+.kz-margin-left-xs { margin-left: 5px;}
+.kz-margin-left-sm { margin-left: 10px;}
+.kz-margin-left-lg { margin-left: 24px;}
+.kz-margin-left-xl { margin-left: 32px;}
+.kz-margin-right { margin-right: 16px;}
+.kz-margin-right-0 { margin-right: 0!important;}
+.kz-margin-right-xs { margin-right: 5px;}
+.kz-margin-right-sm { margin-right: 10px;}
+.kz-margin-right-lg { margin-right: 24px;}
+.kz-margin-right-xl { margin-right: 32px;}
+/* Padding helpers */
+.kz-padding { padding: 16px;}
+.kz-padding-0 { padding: 0!important;}
+.kz-padding-xs { padding: 5px;}
+.kz-padding-sm { padding: 10px;}
+.kz-padding-lg { padding: 24px;}
+.kz-padding-xl { padding: 32px;}
+.kz-padding-horizontal { padding-left: 16px; padding-right: 16px;}
+.kz-padding-horizontal-0 { padding-left: 0!important; padding-right: 0!important;}
+.kz-padding-horizontal-xs { padding-left: 5px; padding-right: 5px;}
+.kz-padding-horizontal-sm { padding-left: 10px; padding-right: 10px;}
+.kz-padding-horizontal-lg { padding-left: 24px; padding-right: 24px;}
+.kz-padding-horizontal-xl { padding-left: 32px; padding-right: 32px;}
+.kz-padding-vertical { padding-top: 16px; padding-bottom: 16px;}
+.kz-padding-vertical-0 { padding-top: 0!important; padding-bottom: 0!important;}
+.kz-padding-vertical-xs { padding-top: 5px; padding-bottom: 5px;}
+.kz-padding-vertical-sm { padding-top: 10px; padding-bottom: 10px;}
+.kz-padding-vertical-lg { padding-top: 24px; padding-bottom: 24px;}
+.kz-padding-vertical-xl { padding-top: 32px; padding-bottom: 32px;}
+.kz-padding-top { padding-top: 16px;}
+.kz-padding-top-0 { padding-top: 0!important;}
+.kz-padding-top-xs { padding-top: 5px;}
+.kz-padding-top-sm { padding-top: 10px;}
+.kz-padding-top-lg { padding-top: 24px;}
+.kz-padding-top-xl { padding-top: 32px;}
+.kz-padding-bottom { padding-bottom: 16px;}
+.kz-padding-bottom-0 { padding-bottom: 0!important;}
+.kz-padding-bottom-xs { padding-bottom: 5px;}
+.kz-padding-bottom-sm { padding-bottom: 10px;}
+.kz-padding-bottom-lg { padding-bottom: 24px;}
+.kz-padding-bottom-xl { padding-bottom: 32px;}
+.kz-padding-left { padding-left: 16px;}
+.kz-padding-left-0 { padding-left: 0!important;}
+.kz-padding-left-xs { padding-left: 5px;}
+.kz-padding-left-sm { padding-left: 10px;}
+.kz-padding-left-lg { padding-left: 24px;}
+.kz-padding-left-xl { padding-left: 32px;}
+.kz-padding-right { padding-right: 16px;}
+.kz-padding-right-0 { padding-right: 0!important;}
+.kz-padding-right-xs { padding-right: 5px;}
+.kz-padding-right-sm { padding-right: 10px;}
+.kz-padding-right-lg { padding-right: 24px;}
+.kz-padding-right-xl { padding-right: 32px;}

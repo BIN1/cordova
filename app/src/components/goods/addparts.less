@@ -1,0 +1,76 @@
+/*商品样式*/
+.kz-min{
+    width: 100%;background: #fff;display: -webkit-box;margin-top: 8px;border-bottom: 1px dashed #dfdfe0 ;
+    .img-boxs{padding: 20px 20px;
+      div{width: 70px;height: 64px;border: 1px solid #ccc}
+    }
+    .kz-rights{
+        -webkit-box-flex: 1;
+        padding: 2px 0px;
+        .kz-rights-ps{
+          width:100%;color: #333333;padding-top: 12px;overflow: hidden;
+          text-overflow:ellipsis;
+          white-space: nowrap;
+        }
+    }
+}
+/*商品搭配样式*/
+.kz-theme{ padding-top: 12px;height: 34px;overflow: hidden; text-overflow:ellipsis;  white-space: nowrap;}
+.icon{font-size: 12px;margin: 4px 0;}
+.li-tops{display: flex;width: 106px;padding: 0 6px}
+.kz-webkit-flex{ -webkit-box-flex: 1; padding: 12px 0;}
+.kz-vision{padding:40px 8px;
+    .kz-vision-child{width: 52px;height: 40px;border: 1px solid #ccc}
+}
+.kz-bg{font-size: 16px;}
+.kz-sm{font-size: 12px;}
+/*尾部*/
+.foot-top{
+  background: #fff;
+  display: flex;
+  z-index: 2;
+  position: fixed; bottom: 0px;left: 0;height: 50px;width: 100%;align-items: center;border-top:1px solid #ededed;
+  .checkAll{
+    -webkit-appearance: none; border: 1px solid #9e9ea0; width: 20px; height: 20px; vertical-align: middle; border-radius: 50%; color: #fff;
+    &:checked{
+      background-color: #8fc31f; border-color:#8fc31f ;
+      &:after{ content: '\e73b'}
+    }
+  }
+  .font-top-cont {
+    height: 100%;
+    line-height: 50px;
+    flex: 1;
+    .kz-select{font-size: 12px;color: #333333}
+    .kz-total{color: #b4282d;padding-left: 14px;font-size: 16px}
+  }
+  .foot-top-btn{
+    flex: 0 0 100px;
+    width: 100px;background: #8fc31f;height: 100%;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+  }
+  .kz-icon{left: -32px;position: absolute;color: #333333}
+}
+.checkAll{    -webkit-appearance: none;
+  border: 1px solid #9e9ea0;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  border-radius: 50%;
+  color: #fff;}
+
+// 复选框组件选中与未选中的样式
+.check-item {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #999;
+  border-radius: 50%;
+}
+// 复选框组件选中与未选中的样式
+.check-item-selected {
+  border-color: #8fc31f;
+  background-color: #8fc31f; color: #fff; text-align: center; line-height: 20px;
+  &:after{ content: '\e73b'}
+}
